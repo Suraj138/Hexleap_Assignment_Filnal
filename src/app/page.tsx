@@ -133,44 +133,64 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="w-[1085.75px] h-[625px] ticket-container flex justify-center place-items-center  gap-20">
-          <img
-            src={leftArrow.src}
-            alt=""
-            className="w-[36.75px] cursor-pointer h-[49px] leftarrow"
-          />
-          <div className="flex gap-[2rem] ticket ">
-            {TicketCardsdata.map((item) => (
-              <TicketCard
-                key={item.id}
-                theme={theme}
-                time={item.time}
-                title={item.title}
-                address={item.address}
-                image={item.image.src}
-                btncontent={item.btncontent}
-              />
-            ))}
+        <div className="mobile1 flex justify-center gap-x-8">
+            <div className="first:pr-10 but items-center flex flex-col justify-center">
+              <button className="w-[2.296875rem] h-[3.0625rem] border border-[#2C9CF0] text-[#2C9CF0]">
+                <figure className="flex justify-center">
+                  <Image
+                    src="/Vector.svg"
+                    alt="button"
+                    width={12}
+                    height={21}
+                    priority
+                  />
+                </figure>
+              </button>
+            </div>
+
+            <TicketCard
+              id="t1"
+              imgsrc="/Ticket1.svg"
+              team="Las Vegas Aviators"
+              date={{ month: "Oct 15", day: "SUN", time: "4:30 PM" }}
+              venue="Las Vegas Ballpark, Las Vegas, Nevada"
+              collection="Take Flight"
+            />
+
+            <TicketCard
+              id="t2"
+              imgsrc="/Ticket2.svg"
+              team="Sacramento River Cats"
+              date={{ month: "Oct 15", day: "SUN", time: "4:30 PM" }}
+              venue="Sutter Health Park, Sacramento, California"
+              collection="Orange"
+            />
+
+            <TicketCard
+              id="t3"
+              imgsrc="/Ticket1.svg"
+              team="Las Vegas Aviators"
+              date={{ month: "Oct 15", day: "SUN", time: "4:30 PM" }}
+              venue="Las Vegas Ballpark, Las Vegas, Nevada"
+              collection="Take Flight"
+            />
+
+            <div className="last:pl-10 but flex flex-col justify-center">
+              <button className="w-[2.296875rem] h-[3.0625rem] border border-[#2C9CF0] text-[#2C9CF0]">
+                <figure className="flex justify-center">
+                  <Image
+                    src="/Vector1.svg"
+                    alt="button"
+                    width={12}
+                    height={21}
+                    priority
+                  />
+                </figure>
+              </button>
+            </div>
           </div>
-          <img
-            src={rightArrow.src}
-            alt=""
-            className=" cursor-pointer w-[36.75px] h-[49px] rightarrow"
-          />
         </div>
-        <div className=" gap-[1.5rem]  hidden ticket-bottom">
-          <img
-            src={leftArrow.src}
-            alt=""
-            className="w-[36.75px] h-[49px] cursor-pointer"
-          />
-          <img
-            src={rightArrow.src}
-            alt=""
-            className="w-[36.75px] h-[49px] cursor-pointer"
-          />
-        </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 }
