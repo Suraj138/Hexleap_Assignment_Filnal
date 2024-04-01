@@ -12,27 +12,6 @@ This project aims to develop two small components of the Hexleap project in both
 - Tailwind CSS: Utility-first CSS framework for styling.
 - TypeScript: Typed superset of JavaScript for enhanced developer productivity and code quality.
 
-## Project Structure
-
-├── public/ # Public files such as images
-│ └── ...
-├── src/ # Source files
-│ ├── app/ # Directory for React components
-| | └──...
-│ │── assets.tsx # Implementation of Component 1
-| | └──...
-│ │── components.tsx # Implementation of Component 2
-| | └──...
-├── .eslintrc.json # ESLint configuration file
-├── .gitignore # Git ignore file
-├── README.md # Project documentation
-├── next.config.mjs # Next.js configuration file
-├── package-lock.json # Dependency lock file
-├── package.json # Project dependencies and scripts
-├── postcss.config.js # PostCSS configuration file
-├── tailwind.config.ts # Tailwind CSS configuration file
-└── tsconfig.json # TypeScript configuration file
-
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
